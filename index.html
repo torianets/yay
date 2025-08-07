@@ -1,60 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>текст 1</title>
+  <title>С Днём Рождения 💙</title>
   <style>
-    body {
+    /* Убираем отступы и настраиваем шрифт */
+    body, html {
       margin: 0;
+      padding: 0;
+      height: 100%;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(#001f3f, #0074D9);
-      color: #fff;
-      scroll-behavior: smooth;
+      overflow: hidden;
     }
-   header {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 60px 20px;
-  text-align: center;
-}
-    
-    button {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: #fff;
-  border: 2px solid #fff;
-  padding: 12px 20px;
-  margin: 10px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-}
 
-button:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-  transform: scale(1.05);
-}
+    /* Видео на фоне */
+    .video-bg {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    header {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      padding: 20px;
+      backdrop-filter: brightness(0.9);
+    }
+
+    h1 {
+      font-size: 3em;
+      text-shadow: 0 0 10px #00bfff;
+    }
+
+    p {
+      font-size: 1.2em;
+      max-width: 600px;
+      text-shadow: 0 0 6px #004466;
+    }
+
+    button {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      border: 2px solid #fff;
+      padding: 12px 20px;
+      margin: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    }
+
+    button:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #fff;
+    }
 
   </style>
 </head>
 <body>
-  
-<header>
-  <h1>С Днём Рождения, любимая 💙</h1>
-  <p>Это небольшой подарок, сделанный с душой. Надеюсь, он подарит тебе тепло, вдохновение и любовь.</p>
-  
-  <div style="margin-top: 30px;">
-   <button onclick="location.href='ocean.html'">🌊 Море</button>
-<button onclick="location.href='ghost.html'">👻 Ghost</button>
-<button onclick="location.href='milgram.html'">🔒 MILGRAM</button>
-<button onclick="location.href='messages.html'">💌 Послания</button>
-<button onclick="location.href='final.html'">🌌 Финал</button>
-    
-  </div>
-</header>
+
+  <!-- Видеофон -->
+  <video autoplay muted loop playsinline class="video-bg">
+    <source src="https://cdn.coverr.co/videos/coverr-waves-crashing-on-a-beach-4994/1080p.mp4" type="video/mp4">
+    Твой браузер не поддерживает видео на фоне.
+  </video>
+
+  <!-- Контент -->
+  <header>
+    <h1>С Днём Рождения, любимая 💙</h1>
+    <p>Это небольшой подарок, сделанный с душой. Надеюсь, он подарит тебе тепло, вдохновение и любовь.</p>
+
+    <div style="margin-top: 30px;">
+      <button onclick="location.href='ocean.html'">🌊 Море</button>
+      <button onclick="location.href='ghost.html'">👻 Ghost</button>
+      <button onclick="location.href='milgram.html'">🔒 MILGRAM</button>
+      <button onclick="location.href='messages.html'">💌 Послания</button>
+      <button onclick="location.href='final.html'">🌌 Финал</button>
+    </div>
+  </header>
+
 </body>
 </html>
