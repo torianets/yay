@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>С Днём Рождения 💙</title>
   <style>
-    /* Убираем отступы и настраиваем шрифт */
-    body, html {
+    html, body {
       margin: 0;
       padding: 0;
       height: 100%;
@@ -14,14 +13,13 @@
       overflow: hidden;
     }
 
-    /* Видео на фоне */
-    .video-bg {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100vw;
-      height: 100vh;
-      object-fit: cover;
-      z-index: -1;
+    body {
+      background-image: url('water.gif'); /* название твоего файла */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: #fff;
     }
 
     header {
@@ -31,9 +29,8 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      color: #fff;
-      padding: 20px;
       backdrop-filter: brightness(0.9);
+      padding: 20px;
     }
 
     h1 {
@@ -65,18 +62,10 @@
       transform: scale(1.05);
       box-shadow: 0 0 15px #fff;
     }
-
   </style>
 </head>
 <body>
 
-  <!-- Видеофон -->
-  <video autoplay muted loop playsinline class="video-bg">
-    <source src="https://cdn.coverr.co/videos/coverr-waves-crashing-on-a-beach-4994/1080p.mp4" type="video/mp4">
-    Твой браузер не поддерживает видео на фоне.
-  </video>
-
-  <!-- Контент -->
   <header>
     <h1>С Днём Рождения, любимая 💙</h1>
     <p>Это небольшой подарок, сделанный с душой. Надеюсь, он подарит тебе тепло, вдохновение и любовь.</p>
